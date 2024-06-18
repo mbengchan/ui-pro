@@ -1,5 +1,5 @@
 {
-  "name": "@paveway/ui-pro",
+  "name": "@nuxt/ui-pro",
   "type": "module",
   "version": "1.2.0",
   "main": "./nuxt.config.ts",
