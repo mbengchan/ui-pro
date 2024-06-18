@@ -1,7 +1,6 @@
+import { addComponentsDir, addImportsDir, createResolver, defineNuxtModule, hasNuxtModule } from '@nuxt/kit'
 import { consola } from 'consola'
 import { colors } from 'consola/utils'
-import { createResolver, defineNuxtModule, addImportsDir, hasNuxtModule, addComponentsDir } from '@nuxt/kit'
-import { validateLicense } from './license'
 import { defu } from 'defu'
 
 import pkg from '../../package.json'
@@ -100,8 +99,8 @@ export default defineNuxtModule({
       }
       return
     }
-    nuxt.hook('build:before', async () => {
-      // await validateLicense({ key, theme, dir: nuxt.options.rootDir })
-    })
+    // nuxt.hook('build:before', async () => {
+    //   await validateLicense({ key, theme, dir: nuxt.options.rootDir })
+    // })
   }
 })
